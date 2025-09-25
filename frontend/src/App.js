@@ -75,9 +75,9 @@ const Login = ({ onLogin }) => {
     <div className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-indigo-100 flex items-center justify-center">
       <div className="bg-white/80 backdrop-blur-lg p-8 rounded-2xl shadow-xl w-full max-w-md">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-            Tuko
-          </h1>
+          // <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+          //   Tuko
+          // </h1>
           <p className="text-gray-600 mt-2">Future of chatting with AI</p>
           <p className="text-sm text-gray-500 mt-1">Made by Tanu</p>
         </div>
