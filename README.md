@@ -5,8 +5,8 @@ A clean, production-ready, fully responsive chat application built with **FastAP
 ---
 
 ## 🚀 Live Demo
-- **Live Application:** [Deploy your own on Render!](#-how-to-deploy-on-render)
-- **Backend API:** `https://<your-backend>.onrender.com`
+- **Live Application:** https://tuko-chat.onrender.com/
+- **Backend API:** 🌐 [https://tuko-backend.onrender.com](https://tuko-backend.onrender.com)
 
 ---
 
@@ -67,38 +67,8 @@ npm run dev
 ```
 Frontend runs at: `http://localhost:3000` (or `http://localhost:5173`)
 
----
 
-## 🌐 How to Deploy on Render
 
-### Step 1: Deploy Backend (Web Service)
-1. Go to [Render Dashboard](https://dashboard.render.com/) and click **New +** -> **Web Service**.
-2. Connect your GitHub repository: `tnuislostq/TUKO-chat-application`.
-3. Configure the following:
-   - **Name:** `tuko-backend`
-   - **Root Directory:** `backend`
-   - **Runtime:** `Python 3`
-   - **Build Command:** `pip install -r requirements.txt`
-   - **Start Command:** `uvicorn server:app --host 0.0.0.0 --port $PORT`
-4. Under **Environment Variables**:
-   - (Optional) `MONGO_URL`: Your MongoDB Atlas URI.
-5. Click **Deploy Web Service** and copy your backend URL (e.g. `https://tuko-backend.onrender.com`).
-
----
-
-### Step 2: Deploy Frontend (Static Site)
-1. In Render Dashboard, click **New +** -> **Static Site**.
-2. Select your repository: `tnuislostq/TUKO-chat-application`.
-3. Configure the following:
-   - **Name:** `tuko-chat`
-   - **Root Directory:** `frontend`
-   - **Build Command:** `npm install && npm run build`
-   - **Publish Directory:** `dist`
-4. Under **Environment Variables**:
-   - `VITE_BACKEND_URL`: `https://tuko-backend.onrender.com` *(Your backend URL from Step 1)*
-5. Click **Create Static Site**.
-
----
 
 ## 📜 License
 MIT License. Built with ❤️ by [tnuislostq](https://github.com/tnuislostq).
