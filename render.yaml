@@ -1,0 +1,28 @@
+services:
+  # Backend Web Service
+  - type: web
+    name: tuko-backend
+    env: python
+    region: oregon
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: FRONTEND_URL
+        value: "*"
+
+  # Frontend Static Site
+  - type: web
+    name: tuko-frontend
+    env: static
+    region: oregon
+    plan: free
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_BACKEND_URL
+        value: https://tuko-backend.onrender.com
