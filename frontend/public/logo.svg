@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="tuko_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4c1d95" />
+      <stop offset="50%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#9333ea" />
+    </linearGradient>
+
+    <!-- Accent Highlights -->
+    <linearGradient id="tuko_bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#ede9fe" />
+      <stop offset="100%" stop-color="#ddd6fe" />
+    </linearGradient>
+
+    <linearGradient id="tuko_stem" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#c4b5fd" />
+    </linearGradient>
+
+    <linearGradient id="tuko_bubble" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Filter for Soft Glow -->
+    <filter id="tuko_glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#7c3aed" flood-opacity="0.5" />
+    </filter>
+
+    <filter id="icon_shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#2e1065" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Squircle with Shadow -->
+  <rect x="36" y="36" width="440" height="440" rx="112" fill="url(#tuko_bg)" filter="url(#tuko_glow)" />
+
+  <!-- Subtle Inner Border Highlight -->
+  <rect x="38" y="38" width="436" height="436" rx="110" stroke="rgba(255,255,255,0.22)" stroke-width="3" fill="none" />
+
+  <!-- Chat Bubble Floating Tail (Discord/WhatsApp hybrid vibe) -->
+  <path d="M 330 330 C 370 330, 400 360, 400 400 C 400 420, 375 425, 360 410 C 345 395, 335 390, 330 390 Z" fill="url(#tuko_bubble)" filter="url(#icon_shadow)" opacity="0.9" />
+
+  <!-- The Stylized 'T' with Chat & Audio Node Motif -->
+  <!-- Top Horizontal Bar of the 'T' with chat bubble tail accent -->
+  <path d="M 130 152 C 130 138, 142 126, 156 126 L 356 126 C 370 126, 382 138, 382 152 C 382 166, 370 178, 356 178 L 156 178 C 142 178, 130 166, 130 152 Z" fill="url(#tuko_bar)" filter="url(#icon_shadow)" />
+
+  <!-- Vertical Stem of the 'T' -->
+  <path d="M 230 160 L 282 160 C 296 160, 308 172, 308 186 L 308 340 C 308 368, 286 390, 256 390 C 226 390, 204 368, 204 340 L 204 186 C 204 172, 216 160, 230 160 Z" fill="url(#tuko_stem)" filter="url(#icon_shadow)" />
+
+  <!-- Voice / Sound Wave Accent Dots -->
+  <circle cx="150" cy="256" r="16" fill="#ede9fe" filter="url(#icon_shadow)" opacity="0.9" />
+  <circle cx="150" cy="306" r="10" fill="#ddd6fe" opacity="0.75" />
+  <circle cx="150" cy="206" r="10" fill="#ddd6fe" opacity="0.75" />
+
+  <!-- Right Signal Pulse -->
+  <circle cx="362" cy="256" r="16" fill="#f472b6" filter="url(#icon_shadow)" opacity="0.95" />
+  <circle cx="362" cy="206" r="10" fill="#f472b6" opacity="0.75" />
+  <circle cx="362" cy="306" r="10" fill="#f472b6" opacity="0.75" />
+
+  <!-- Center Heartbeat / Voice Spark in Stem -->
+  <circle cx="256" cy="260" r="12" fill="#7c3aed" />
+</svg>

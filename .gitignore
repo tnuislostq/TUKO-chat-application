@@ -1,17 +1,28 @@
 # Dependencies
 node_modules/
+frontend/node_modules/
 backend/venv/
 backend/.venv/
 env/
 venv/
 
-# Environment Variables
+# Environment Variables & Secrets
 .env
-.env.local
-.env.production
+.env.*
+*.env
 backend/.env
+frontend/.env
+*.key
+*.pem
+
+# Data and Uploads (Never commit user database or uploaded files)
+backend/data/
+backend/app/uploads/*
+!backend/app/uploads/.gitkeep
 
 # Build Artifacts
+dist/
+build/
 frontend/dist/
 frontend/build/
 
