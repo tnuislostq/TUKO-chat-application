@@ -6,9 +6,6 @@ A production-minded, full-stack communication platform combining the simplicity 
 
 ## 🚀 Live Demo
 - **Live Application:** [https://tuko-chat.onrender.com/](https://tuko-chat.onrender.com/)
-- **Backend API:** [https://tuko-backend.onrender.com](https://tuko-backend.onrender.com)
-
----
 
 ## ✨ Features
 
@@ -71,46 +68,4 @@ tuko-chat-application/
     ├── tailwind.config.js  # Violet / Lavender & Navy Dark tokens
     └── vite.config.js      # Optimized build and dev proxy
 ```
-
----
-
-## 🛠️ Local Development
-
-### 1. Backend Setup
-```bash
-cd backend
-python -m venv venv
-
-# On Windows:
-venv\Scripts\activate
-# On macOS/Linux:
-source venv/bin/activate
-
-pip install -r requirements.txt
-python server.py
-```
-> Backend runs at `http://localhost:8000`
-
-### 2. Frontend Setup
-```bash
-cd frontend
-npm install
-npm run dev
-```
-> Frontend runs at `http://localhost:3000`
-
-### 3. Run Backend Unit Tests
-```bash
-cd backend
-pytest -v
-```
-
----
-
-## 🌐 Deploy to Render
-
-The repository includes `render.yaml` for 1-click zero-config deployment.
-
-1. Create a Web Service for **backend** (`rootDir: backend`, `uvicorn server:app --host 0.0.0.0 --port $PORT`).
-2. Create a Static Site for **frontend** (`rootDir: frontend`, build command: `npm install && npm run build`, publish dir: `dist`).
-3. Set `VITE_BACKEND_URL` on the frontend pointing to your backend URL.
+## 🌐 Deployed to Render
